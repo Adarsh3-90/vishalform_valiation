@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="StyleSheet" href="style.css">
+</head>
+
+<body>
+    <div class="outerbox">
+        <div class="innerbox">
+            <header class="Reg_header">
+                <h1>Registration_form</h1>
+                <p>Hurry up for Registration take's 30 min </p>
+            </header>
+            <main class="Reg_body">
+
+
+                <form action="/myaction.php" name="myform" onsubmit="return validateForm()" method="post">
+                    <p>
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" placeholder="Enter your name" onblur="validateFirstName()">
+                        <b><span class="formerror" id="first_name_error"></span></b>
+                    </p>
+
+                    <p>
+                        <label for="last_name">last_name</label>
+                        <input type="text" id="last_name" placeholder="Enter your last_name">
+                    </p>
+
+                    <p>
+                        <label for="Email">Email</label>
+                        <input type="text" id="Email" placeholder="enter your email">
+                    </p>
+
+                    <p>
+                        <label for="password">password</label>
+                        <input type="text" id="password" placeholder="enter your password">
+                    </p>
+                    <p> Your favourite Game!.</p>
+                    <p>
+                        <label for="Cricket">Cricket</label>
+                        <input type="radio" id="Cricket" name="fav_game" value="Cricket">
+                    </p>
+                    <p>
+                        <label for="Ludo">Ludo</label>
+                        <input type="radio" id="Ludo" name="fav_game" value="Ludo">
+                    </p>
+                    <p>
+                        <label for="basketball">basketball</label>
+                        <input type="radio" id="basketball" name="fav_game" value="basketball">
+                    </p>
+                    <p>
+                        <input type="button" id="submit" value="submit">
+                    </p>
+
+                </form>
+            </main>
+            <footer class="Reg_footer">
+                <p>Register for new user's <a href="SignIn">SignIn</a></p>
+            </footer>
+        </div>
+    </div>
+    <script src="index.js"></script>
+
+
+
+</body>
+
+</html>

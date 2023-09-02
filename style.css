@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.outerbox{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(207, 187, 255, 0.733);
+
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+.innerbox{
+    width: 800px;
+   
+    margin: 0 auto;
+    position: relative;
+    top:50%;
+    transform:translateY(-50%);
+   
+    border-radius: 8px;
+    background-color: aliceblue;
+
+
+}
+.Reg_header h1{
+    width: 0.5rem;
+    color: rgb(195, 130, 238);
+    text-align: center;
+    padding: 10px;
+
+}
+.Reg_header p{
+     font-size: 1rem;
+     color: #555;
+     padding: 10px;
+}
+.Reg_body{
+    margin: 20px 0px;
+}
+.Reg_body p{
+    margin: 10px 0px;
+    padding: 10px;
+}
+.Reg_body label{
+   display: block;
+   font-weight: bold;
+   margin: 10px 0px;
+}
+.Reg_body p input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 4px 4px;
+    border: 2px solid #CCC;
+    border-radius: 5px;
+    font-size: 1rem;
+
+}
+.Reg_body p input[type="button"]{
+    background-color :bisque;
+    border: none;
+    color: black;
+}
+.Reg_body p input[type="button"]:hover{
+   cursor: pointer;
+   color: blue;
+}
+.Reg_footer p{
+    text-align: center;
+    font-size: 1rem;
+    color:#555;
+}
+.Reg_footer p a{
+    color: rgb(239, 173, 255);
+}
+.formerror {
+    color: red;
+}
